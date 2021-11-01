@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# Dog Stander
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Can your neighbours really stand your dog? I don't think so. And if you are still unsure, try this app out. Inspired by `Digital Dogsitter` I created an open-source application to track the noise from your room, while you are out and about.
 
-## Recommended IDE Setup
+![Tux, the Linux mascot](https://i.imgur.com/8AlsJKY.png)
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## How it works?
+
+It simply records audio and formats the data to be human person readable, genius, right?
+
+## Wan to try it out?
+
+- Clone this repository
+- Write `npm install`
+- Write `npm run dev`
+- Find out what the dog doin'
