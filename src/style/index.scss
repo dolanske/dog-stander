@@ -1,0 +1,23 @@
+// Reset style
+@import './setup/reset.scss';
+@import './setup/layout.scss';
+@import './setup/var.scss';
+@import './setup/font.scss';
+
+// Import generic modules
+@import './modules/button.scss';
+@import './modules/box.scss'; // Import specific styling
+@import './app/index.scss';
+
+html {
+  @include regular();
+  font-style: 1.2rem;
+  background-color: $color-bg;
+
+  scrollbar-width: 4px;
+  scrollbar-width: thin;
+
+  body {
+    overflow-x: hidden;
+  }
+}

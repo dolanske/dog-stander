@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  // padding: 0 2em;
+  text-align: center;
+  width: 156px;
+  font-weight: 400;
+  background-color: $color-highlight;
+  color: $color-bg;
+  border-bottom: 4px solid darken($color-highlight, 10%);
+
+  &:active {
+    border-bottom-width: 2px;
+    transform: translateY(1px);
+  }
+
+  &.btn-red {
+    background-color: $color-red;
+    border-bottom-color: $color-red-shade;
+  }
+}

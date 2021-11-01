@@ -1,0 +1,161 @@
+.app {
+  .box {
+    &.hello-box {
+      display: block;
+      text-align: center;
+      margin-bottom: 4em;
+
+      span {
+        display: block;
+        margin: 0 auto 2em;
+        width: 64px;
+        height: 64px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+
+      h3 {
+        font-style: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .analyze-layout {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+    margin-bottom: 2em;
+
+    .button-wrap {
+      display: flex;
+      gap: 16px;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .header {
+      flex: 1;
+
+      h2 {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+      }
+
+      h2,
+      p {
+        color: $color-text;
+      }
+
+      .times {
+        display: flex;
+        gap: 32px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      p {
+        font-size: 1rem;
+
+        strong {
+          @include bold();
+
+          &.red {
+            font-size: 1.4rem;
+            color: $color-red;
+          }
+        }
+      }
+    }
+  }
+
+  .graph-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+
+    .graph-prewrap {
+      width: 216px;
+    }
+
+    .graph-legend {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none;
+
+      li {
+        display: block;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 2em;
+        font-size: null;
+        color: $color-text;
+
+        .point {
+          display: block;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          left: 0;
+          top: calc(50% - 6px);
+          border-radius: 50%;
+          background-color: $color-blue;
+
+          &.loud {
+            background-color: $color-red;
+          }
+
+          &.noise {
+            background-color: $color-highlight;
+          }
+        }
+
+        strong {
+          display: block;
+          font-size: 1.8rem;
+        }
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .bar-wrap {
+    flex: 1;
+    & > div {
+      height: 284px;
+    }
+  }
+
+  .stopwatch {
+    transition: 0.2s all cubic-bezier(0, 0.55, 0.45, 1);
+    font-size: 1.2rem;
+    color: $color-text;
+    font-weight: 600;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-16px);
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

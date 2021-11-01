@@ -1,0 +1,14 @@
+.box {
+  border-radius: 10px;
+  display: block;
+  background-color: $color-bg-light;
+  font-style: 1.4rem;
+  color: $color-text;
+  padding: 2em;
+  border-bottom: 4px solid darken($color-bg-light, 10%);
+
+  &.half {
+    width: 50%;
+    margin: auto;
+  }
+}

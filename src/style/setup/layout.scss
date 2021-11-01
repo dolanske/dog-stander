@@ -1,0 +1,42 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 926px;
+  margin: auto;
+  padding-top: 6em;
+}
+
+.layout-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.flex-layout {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}

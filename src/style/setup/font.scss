@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Noto Sans Regular';
+  font-style: normal;
+  src: url('~@/assets/font/NotoSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans Bold';
+  font-style: normal;
+  src: url('~@/assets/font/NotoSans-Bold.ttf') format('ttf');
+}
+
+@mixin regular($style: normal) {
+  font-family: 'Noto Sans Regular', sans-serif;
+  font-weight: 300;
+  font-style: $style;
+}
+
+@mixin bold($style: normal) {
+  font-family: 'Noto Sans Bold', sans-serif;
+  font-weight: 700;
+  font-style: $style;
+}
