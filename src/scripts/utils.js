@@ -65,7 +65,7 @@ export const formatDate = (date) => {
   const day = d.toLocaleDateString('default', { day: 'numeric' })
   const year = d.toLocaleDateString('default', { year: 'numeric' })
 
-  return `${month} ${day} ${year}`
+  return `${month.toUpperCase()} ${day}${day == 1 ? 'st' : day == 2 ? 'nd' : day == 3 ? 'rd' : 'th'} ${year}`
 }
 
 export const inRange = (number, min, max) => {
